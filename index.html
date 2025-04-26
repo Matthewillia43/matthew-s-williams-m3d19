@@ -36,7 +36,18 @@
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
-						<div id="hover-info" style="text-align: center; font-size: 1.2em; margin-top: 1em; color: #ccc;"></div>
+						<!-- Hover Info Box -->
+						<div id="hover-info" style="
+							text-align: center;
+							font-size: 1.2em;
+							color: #ccc;
+							min-height: 1.5em;
+							margin-top: 1em;
+							visibility: hidden;
+							transition: opacity 0.3s ease;
+							opacity: 0;
+						"></div>
+
 
 					</header>
 
@@ -336,13 +347,22 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/main.js"></script>
 
 
-		<script>
+	<!-- Hover Script -->
+<script>
 	function showInfo(text) {
-		document.getElementById('hover-info').textContent = text;
+		const info = document.getElementById('hover-info');
+		info.textContent = text;
+		info.style.visibility = 'visible';
+		info.style.opacity = '1';
 	}
 	function clearInfo() {
-		document.getElementById('hover-info').textContent = '';
+		const info = document.getElementById('hover-info');
+		info.textContent = '';
+		info.style.visibility = 'hidden';
+		info.style.opacity = '0';
 	}
+</script>
+
 </script>
 
 	</body>

@@ -36,6 +36,8 @@
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
+						<div id="hover-info" style="text-align: center; font-size: 1.2em; margin-top: 1em; color: #ccc;"></div>
+
 					</header>
 
 				<!-- Main -->
@@ -332,6 +334,16 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+
+		<script>
+	function showInfo(text) {
+		document.getElementById('hover-info').textContent = text;
+	}
+	function clearInfo() {
+		document.getElementById('hover-info').textContent = '';
+	}
+</script>
 
 	</body>
 </html>

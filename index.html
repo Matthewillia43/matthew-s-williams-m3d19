@@ -41,12 +41,14 @@
 							text-align: center;
 							font-size: 1.2em;
 							color: #ccc;
-							min-height: 1.5em;
+							height: 1.5em;
+							line-height: 1.5em;
 							margin-top: 1em;
-							visibility: hidden;
-							transition: opacity 0.3s ease;
 							opacity: 0;
+							visibility: hidden;
+							transition: opacity 0.3s ease, visibility 0.3s ease;
 						"></div>
+
 
 
 					</header>
@@ -357,10 +359,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	}
 	function clearInfo() {
 		const info = document.getElementById('hover-info');
-		info.textContent = '';
-		info.style.visibility = 'hidden';
 		info.style.opacity = '0';
+		info.style.visibility = 'hidden';
 	}
+</script>
+
 </script>
 
 </script>
